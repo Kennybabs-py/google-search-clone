@@ -1,0 +1,157 @@
+/* Default */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+:root {
+  --max-width: 1081px;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* body styling */
+header {
+  width: 100%;
+  padding: 0.8rem 0;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+}
+
+header .logo__search_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70%;
+  gap: 3rem;
+  margin-top: 20px;
+}
+
+header > nav figure > img {
+  width: 92px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 690px;
+  height: 44px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  border-radius: 24px;
+  padding: 0 20px;
+}
+
+header .search-input {
+  height: 90%;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+header .search-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+header .search-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+header .setting-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.setting-box span:last-of-type img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* main */
+main {
+  width: 100%;
+  margin-top: 6.3rem;
+}
+
+.tab-section {
+  border-bottom: 1px solid #ebebeb;
+  margin-top: -10px;
+}
+
+.tab-container {
+  width: 100%;
+  max-width: 652px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16rem;
+  margin-left: -30px;
+}
+
+.tab-container .main-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.3rem;
+}
+
+.main-tabs button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  background: inherit;
+  border: none;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  color: #5f6368;
+  font-size: 14px;
+  font-family: 'Google Sans', arial, sans-serif;
+}
+
+.main-tabs button:first-of-type {
+  border-bottom: 3px solid #1a73e8;
+  color: #1a73e8;
+}
+
+.main-tabs button svg {
+  width: 15px;
+  height: 15px;
+  fill: #5f6368;
+}
+
+.tab-container > button {
+  border: none;
+  color: #5f6368;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+}
